@@ -1,0 +1,19 @@
+{
+  "name": "lpp-vita-definitions",
+  "version": "0.1.0",
+  "description": "Typescript definitions for lpp-vita",
+  "keywords": [
+    "lpp-vita",
+    "lua",
+    "typescript",
+    "tstl"
+  ],
+  "author": "fatihdgn",
+  "license": "ISC",
+  "files": [
+    "**/*.d.ts"
+  ],
+  "devDependencies": {
+    "typescript-to-lua": "^0.32.2"
+  }
+}
