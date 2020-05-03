@@ -36,9 +36,9 @@ declare namespace Controls {
     /** @tupleReturn */
     function readRightAnalog(): [number, number];
     /** @tupleReturn */
-    function readTouch(): [number, number, number, number];
+    function readTouch(): [number | null, number | null, number | null, number | null];
     /** @tupleReturn */
-    function readRetroTouch(): [number, number, number, number];
+    function readRetroTouch(): [number | null, number | null, number | null, number | null];
     function check(bitmask: number, value: Ctrl): boolean;
     function rumble(port: number, small: number, large: number): void;
     function setLightbar(port: number, color: number): void;
