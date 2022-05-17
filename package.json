@@ -14,6 +14,6 @@
     "**/*.d.ts"
   ],
   "devDependencies": {
-    "typescript-to-lua": "^0.32.2"
+    "typescript-to-lua": "^1.4.4"
   }
 }
