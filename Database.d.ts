@@ -11,7 +11,9 @@ declare namespace Database {
      * @param filename Filename of the database to open.
      * @returns A valid database handle.
      */
-    function open(filename: string): number;
+    function open(
+        filename: string
+    ): number;
 
     /**
      * Close an opened database.
@@ -22,7 +24,9 @@ declare namespace Database {
      * ```
      * @param db A valid database handle.
      */
-    function close(db: number): void;
+    function close(
+        db: number
+    ): void;
 
     /**
      * Execute a query.
@@ -36,5 +40,8 @@ declare namespace Database {
      * @param query An SQL query to execute.
      * @returns An array with the results of the executed query.
      */
-    function execQuery<T>(db: number, query: string) : Array<T>;
+    function execQuery<T>(
+        db: number, 
+        query: string
+    ) : Array<T>;
 }

@@ -21,9 +21,30 @@ declare namespace Network {
     function getMacAdddress(): string;
     function isWifiEnabled(): boolean;
     function getWifiLevel(): number;
-    function downloadFile(url: string, file: string, useragent?: string, method?: HTTPMethod, postdata?: string): void;
-    function downloadFileAsync(url: string, file: string, useragent?: string, method?: HTTPMethod, postdata?: string): void;
-    function requestString(url: string, useragent?: string, method?: HTTPMethod, postdata?: string): void;
-    function requestStringAsync(url: string, useragent?: string, method?: HTTPMethod, postdata?: string): void;
-
+    function downloadFile(
+        url: string, 
+        file: string, 
+        useragent?: string, 
+        method?: HTTPMethod, 
+        postdata?: string
+    ): void;
+    function downloadFileAsync(
+        url: string, 
+        file: string, 
+        useragent?: string, 
+        method?: HTTPMethod, 
+        postdata?: string
+    ): void;
+    function requestString(
+        url: string, 
+        useragent?: string, 
+        method?: HTTPMethod, 
+        postdata?: string
+    ): string;
+    function requestStringAsync(
+        url: string, 
+        useragent?: string, 
+        method?: HTTPMethod, 
+        postdata?: string
+    ): void;
 }

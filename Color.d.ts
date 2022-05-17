@@ -1,7 +1,6 @@
 /** @noSelfInFile */
 
 declare namespace Color {
-    // https://stackoverflow.com/a/60053077
     /**
      * Create a new color.
      * 
@@ -15,12 +14,26 @@ declare namespace Color {
      * @param a A channel value (optional).
      * @returns The combined RGBA color.
      */
-    function _new(r: number, g: number, b: number, a?: number): number;
-    function getR(clr: number): number;
-    function getG(clr: number): number;
-    function getB(clr: number): number;
-    function getA(clr: number): number;
+    function _new(
+        r: number, 
+        g: number, 
+        b: number, 
+        a?: number
+    ): number;
+    function getR(
+        clr: number
+    ): number;
+    function getG(
+        clr: number
+    ): number;
+    function getB(
+        clr: number
+    ): number;
+    function getA(
+        clr: number
+    ): number;
 
+    // https://stackoverflow.com/a/60053077
     export { 
         _new as new,
         getR,

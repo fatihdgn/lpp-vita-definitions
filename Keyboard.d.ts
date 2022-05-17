@@ -22,7 +22,14 @@ declare enum KeyOption {
 }
 
 declare namespace Keyboard {
-    function start(title: string, text: string, length?: number, type?: LVKeyType, mode?: KeyMode, opt?: KeyOption): void;
+    function start(
+        title: string, 
+        text: string, 
+        length?: number, 
+        type?: LVKeyType, 
+        mode?: KeyMode, 
+        opt?: KeyOption
+    ): void;
     function getState(): DlgState;
     function getInput(): string;
     function clear(): void;

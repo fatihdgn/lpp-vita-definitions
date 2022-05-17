@@ -74,33 +74,63 @@ declare enum CameraEffect {
 }
 
 declare namespace Camera {
-    function init(type: CameraType, resolution: CameraRes, framerate: number): void;
+    function init(
+        type: CameraType, 
+        resolution: CameraRes, 
+        framerate: number
+    ): void;
     function term(): void;
     function getOutput(): number;
-    function setBrightness(value: number): void;
+    function setBrightness(
+        value: number
+    ): void;
     function getBrightness(): number;
-    function setSaturation(value: number): void;
+    function setSaturation(
+        value: number
+    ): void;
     function getSaturation(): number;
-    function setSharpness(value: number): void;
+    function setSharpness(
+        value: number
+    ): void;
     function getSharpness(): number;
-    function setContrast(value: number): void;
+    function setContrast(
+        value: number
+    ): void;
     function getContrast(): number;
-    function setReverse(mode: CameraReverse): void;
+    function setReverse(
+        mode: CameraReverse
+    ): void;
     function getReverse(): CameraReverse;
-    function setEffect(effect: CameraEffect): void;
+    function setEffect(
+        effect: CameraEffect
+    ): void;
     function getEffect(): CameraEffect;
-    function setZoom(value: number): void;
+    function setZoom(
+        value: number
+    ): void;
     function getZoom(): number;
-    function setAntiFlicker(mode: CameraAntiFlick): void;
+    function setAntiFlicker(
+        mode: CameraAntiFlick
+    ): void;
     function getAntiFlicker(): CameraAntiFlick;
-    function setISO(mode: CameraISO): void;
+    function setISO(
+        mode: CameraISO
+    ): void;
     function getISO(): CameraISO;
-    function setGain(value: number): void;
+    function setGain(
+        value: number
+    ): void;
     function getGain(): number;
-    function setWhiteBalance(mode: CameraWB): void;
+    function setWhiteBalance(
+        mode: CameraWB
+    ): void;
     function getWhiteBalance(): CameraWB;
-    function setBacklight(mode: CameraBacklight): void;
+    function setBacklight(
+        mode: CameraBacklight
+    ): void;
     function getBacklight(): CameraBacklight;
-    function setNightmode(value: CameraNightmode): void;
+    function setNightmode(
+        value: CameraNightmode
+    ): void;
     function getNightmode(): CameraNightmode;
 }
