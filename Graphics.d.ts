@@ -56,7 +56,7 @@ declare namespace Graphics {
     function createImage(
         width: number, 
         height: number, 
-        color: number
+        color?: number
     ): number;
     function loadImage(
         filename: string
