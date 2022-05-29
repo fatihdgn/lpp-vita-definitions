@@ -31,14 +31,10 @@ declare enum Ctrl {
 
 declare namespace Controls {
     function read(): number;
-    /** @tupleReturn */
-    function readLeftAnalog(): [number, number];
-    /** @tupleReturn */
-    function readRightAnalog(): [number, number];
-    /** @tupleReturn */
-    function readTouch(): [number | null, number | null, number | null, number | null];
-    /** @tupleReturn */
-    function readRetroTouch(): [number | null, number | null, number | null, number | null];
+    function readLeftAnalog(): LuaMultiReturn<[number, number]>;
+    function readRightAnalog(): LuaMultiReturn<[number, number]>;
+    function readTouch(): LuaMultiReturn<[number | null, number | null, number | null, number | null]>;
+    function readRetroTouch(): LuaMultiReturn<[number | null, number | null, number | null, number | null]>;
     function check(
         bitmask: number, 
         value: Ctrl
@@ -61,8 +57,6 @@ declare namespace Controls {
     function enableAccel(): void;
     function disableGyro(): void;
     function disableAccel(): void;
-    /** @tupleReturn */
-    function readGyro(): [number, number, number];
-    /** @tupleReturn */
-    function readAccel(): [number, number, number];
+    function readGyro(): LuaMultiReturn<[number, number, number]>;
+    function readAccel(): LuaMultiReturn<[number, number, number]>;
 }

@@ -54,10 +54,9 @@ declare namespace Gui {
         label: string, 
         color: number
     ): void;
-    /** @tupleReturn */
     function getTextSize(
         text: string
-    ): [number, number];
+    ): LuaMultiReturn<[number, number]>;
     function drawDisabledText(
         label: string
     ): void;
@@ -97,7 +96,6 @@ declare namespace Gui {
     function drawTooltip(
         label: string
     ): void;
-    /** @tupleReturn */
     function drawSlider(
         label: string, 
         val_min: number, 
@@ -106,8 +104,7 @@ declare namespace Gui {
         val2?: number, 
         val3?: number, 
         val4?: number
-    ): [number, number?, number?, number?];
-    /** @tupleReturn */
+    ): LuaMultiReturn<[number, number?, number?, number?]>;
     function drawIntSlider(
         label: string, 
         val_min: number, 
@@ -116,7 +113,7 @@ declare namespace Gui {
         val2?: number, 
         val3?: number, 
         val4?: number
-    ): [number, number?, number?, number?];
+    ): LuaMultiReturn<[number, number?, number?, number?]>;
     function drawComboBox(
         label: string, 
         index: number, 

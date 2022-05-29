@@ -165,10 +165,8 @@ declare namespace System {
     function launchApp(titleid: string): void;
     function getFreeSpace(dev: string): number;
     function getTotalSpace(dev: string): number;
-    /** @tupleReturn */
-    function getTime(): [number, number, number];
-    /** @tupleReturn */
-    function getDate(): [number, number, number, number];
+    function getTime(): LuaMultiReturn<[number, number, number]>;
+    function getDate(): LuaMultiReturn<[number, number, number, number]>;
     function getUsername(): string;
     function getLanguage(): number;
     function getModel(): number;
