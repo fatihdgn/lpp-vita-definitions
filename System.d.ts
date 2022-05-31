@@ -172,7 +172,7 @@ declare namespace System {
     function getModel(): number;
     function getPsId(): string;
     function getTitle(): string;
-    function getTitleId(): string;
+    function getTitleID(): string;
     function extractSfo(
         filename: string
     ): SFO;
